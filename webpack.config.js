@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const outputDirectory = "dist";
+const outputDirectory = "build";
 
 module.exports = {
   mode: "development",
@@ -39,11 +39,15 @@ module.exports = {
   //   },
   //   historyApiFallback: true,
   // },
+
+  devServer: {
+    contentBase: "./build"
+  },
+
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      //   favicon: "./public/favicon.ico",
+      template: "./public/index.html",
     }),
   ],
   resolve: {
