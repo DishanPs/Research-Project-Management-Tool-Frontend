@@ -2,13 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const outputDirectory = "build";
 
 module.exports = {
-  mode: "development",
+  //mode: "development",
   entry: "/src/index.js",
   output: {
-    path: path.join(__dirname, outputDirectory),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
     publicPath: "/",
   },
@@ -41,13 +40,13 @@ module.exports = {
   // },
 
   devServer: {
-    contentBase: "./build"
+    contentBase: "./build",
   },
 
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      template: path.resolve("./index.html"),
     }),
   ],
   resolve: {
