@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResearchGroupsStudents Change the component when clicked 1`] = `
+<a
+  className="normal"
+  href="https://research-project-management.netlify.app/creategroups"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  ResearchGroupsStudents
+</a>
+`;
+
+exports[`ResearchGroupsStudents Change the component when clicked 2`] = `
+<a
+  className="hovered"
+  href="https://research-project-management.netlify.app/creategroups"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  ResearchGroupsStudents
+</a>
+`;
+
+exports[`ResearchGroupsStudents Change the component when clicked 3`] = `
+<a
+  className="normal"
+  href="https://research-project-management.netlify.app/creategroups"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  ResearchGroupsStudents
+</a>
+`;
